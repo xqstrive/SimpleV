@@ -7,11 +7,11 @@ package log;
  */
 public interface Log {
 
-    public void init();
+    void init();
 
-    public void info(String massage);
+    void info(String massage);
 
-    public void warn(String massage);
+    void warn(String massage);
 
-    public void erro(String massage);
+    void erro(String massage);
 }

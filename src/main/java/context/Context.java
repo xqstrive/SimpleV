@@ -5,11 +5,11 @@ package context;
  * inface of Context.
  */
 public interface Context {
-    public Object get(String K);
+    Object get(String K);
 
-    public void put(String K, Object V);
+    void put(String K, Object V);
 
-    public boolean hasKey(String K);
+    boolean hasKey(String K);
 
-    public void remove(String K);
+    void remove(String K);
 }

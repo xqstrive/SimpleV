@@ -22,4 +22,8 @@ public class PropertyResource {
     public static Log getLog(){
         return pi.getLog();
     }
+
+    public static int getTemplateMapMax(){return pi.getTemplateMapMax();}
+
+    public static String getStaticFilePath(){return pi.getStatisFilePath();}
 }
