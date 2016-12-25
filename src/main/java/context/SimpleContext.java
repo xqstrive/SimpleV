@@ -1,13 +1,14 @@
+package context;
+
 import java.util.HashMap;
 import java.util.Map;
-import context.Context;
 /**
  * Created by wangqi on 2016/12/7.
  * the context must be (String,Object);
  */
 public class SimpleContext implements Context{
     private Map context = null;
-    public SimpleContext(){}
+    public SimpleContext(){this.context = new HashMap();}
     public SimpleContext(Map context){this.context = context;}
     public SimpleContext(String K, Object V){context = (context == null ? new HashMap():context);context.put(K,V);}
 
