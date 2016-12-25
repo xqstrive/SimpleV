@@ -1,6 +1,6 @@
 package app;
 
-import compile.Grammar.SimpleGrammars;
+import compile.grammar.SimpleGrammars;
 import compile.Template;
 import compile.TemplateStream;
 import context.Context;
