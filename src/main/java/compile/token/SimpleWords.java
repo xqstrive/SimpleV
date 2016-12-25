@@ -1,4 +1,4 @@
-package compile.Token;
+package compile.token;
 
 import java.util.ArrayList;
 

@@ -1,9 +1,9 @@
-package compile.Token;
+package compile.token;
 
 import java.util.ArrayList;
 
-import static compile.Token.WordBean.*;
-import static compile.Token.WordBean.ENDIF;
+import static compile.token.WordBean.*;
+import static compile.token.WordBean.ENDIF;
 
 /**
  * 词法分词类

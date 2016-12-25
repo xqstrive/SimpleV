@@ -1,4 +1,4 @@
-package compile.Token;
+package compile.token;
 
 /**
  * Created by wangqi on 2016/12/13.

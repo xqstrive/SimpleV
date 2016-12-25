@@ -1,6 +1,6 @@
-package compile.Token;
+package compile.token;
 
-import compile.Grammar.SimpleGrammar;
+import compile.grammar.SimpleGrammar;
 
 /**
  * Created by wangqi on 2016/12/14.
