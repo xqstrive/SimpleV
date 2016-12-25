@@ -1,8 +1,8 @@
-package compile.Grammar;
+package compile.grammar;
 
 import compile.Template;
-import compile.Token.SimpleToken;
-import compile.Token.SimpleTokenFor;
+import compile.token.SimpleToken;
+import compile.token.SimpleTokenFor;
 import context.Context;
 
 import java.util.List;

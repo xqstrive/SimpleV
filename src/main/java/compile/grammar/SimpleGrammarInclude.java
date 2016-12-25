@@ -1,9 +1,9 @@
-package compile.Grammar;
+package compile.grammar;
 
 import compile.Template;
 import compile.TemplateStream;
-import compile.Token.SimpleToken;
-import compile.Token.SimpleTokenInclude;
+import compile.token.SimpleToken;
+import compile.token.SimpleTokenInclude;
 import context.Context;
 import property.PropertyResource;
 

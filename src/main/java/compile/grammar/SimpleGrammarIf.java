@@ -1,7 +1,7 @@
-package compile.Grammar;
+package compile.grammar;
 
 import compile.Template;
-import compile.Token.*;
+import compile.token.*;
 import context.Context;
 
 /**

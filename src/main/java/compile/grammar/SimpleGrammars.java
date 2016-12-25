@@ -1,14 +1,14 @@
-package compile.Grammar;
+package compile.grammar;
 
 import compile.Template;
-import compile.Token.*;
+import compile.token.*;
 import context.Context;
 import property.PropertyResource;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static compile.Token.WordBean.*;
+import static compile.token.WordBean.*;
 
 /**
  * Created by wangqi on 2016/12/14.

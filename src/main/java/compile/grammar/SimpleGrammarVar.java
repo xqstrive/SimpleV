@@ -1,7 +1,7 @@
-package compile.Grammar;
+package compile.grammar;
 
-import compile.Token.SimpleToken;
-import compile.Token.SimpleTokenVar;
+import compile.token.SimpleToken;
+import compile.token.SimpleTokenVar;
 import context.Context;
 
 /**
