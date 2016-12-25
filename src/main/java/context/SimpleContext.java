@@ -12,18 +12,22 @@ public class SimpleContext implements Context{
     public SimpleContext(Map context){this.context = context;}
     public SimpleContext(String K, Object V){context = (context == null ? new HashMap():context);context.put(K,V);}
 
+    @Override
     public Object get(String K){
         return (context.containsKey(K) == true ? context.get(K): null);
     }
 
+    @Override
     public void put(String K, Object V){
         context.put(K,V);
     }
 
+    @Override
     public boolean hasKey(String K){
         return context.containsKey(K);
     }
 
+    @Override
     public void remove(String K){
         context.remove(K);
     }
