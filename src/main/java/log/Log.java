@@ -6,7 +6,6 @@ package log;
  * init can allow use any Log frame.it can be only used once.
  */
 public interface Log {
-
     void init();
 
     void info(String massage);

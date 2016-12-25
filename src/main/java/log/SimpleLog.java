@@ -1,11 +1,8 @@
 package log;
-import log.Log;
-import org.apache.commons.lang.text.StrBuilder;
-import sun.java2d.pipe.SpanShapeRenderer;
+
 
 import java.io.File;
 import java.io.IOException;
-import java.text.SimpleDateFormat;
 import java.util.logging.FileHandler;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -22,7 +19,6 @@ public class SimpleLog implements Log{
     private static final String LOG_FOLDER_PRE = "SimpleLog";
     private static final String LOG_FILE_NAME = "Simple.log";
     private static String LOG_NAME = "Simple";
-    //private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
     private static Logger logger = Logger.getLogger(LOG_NAME);
 
@@ -54,7 +50,6 @@ public class SimpleLog implements Log{
             file.mkdir();
         fileName.append(File.separatorChar);
         fileName.append(LOG_FILE_NAME);
-        System.out.println(fileName.toString());
         return fileName.toString();
     }
 
