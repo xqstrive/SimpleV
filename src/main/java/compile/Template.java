@@ -1,8 +1,8 @@
 package compile;
 
-import compile.Token.SimpleToken;
-import compile.Token.SimpleTokens;
-import compile.Token.SimpleWords;
+import compile.token.SimpleToken;
+import compile.token.SimpleTokens;
+import compile.token.SimpleWords;
 import property.PropertyResource;
 import template.TemplateByte;
 import template.TemplateByteMem;
