@@ -1,14 +1,13 @@
-package compile;
+package compile.Token;
 
 /**
  * Created by wangqi on 2016/12/14.
  */
 public class SimpleTokenInclude implements SimpleToken,WordBean {
+    private String original;
     private int type = INCLUDE;
     private String file;
-    private String original;
-
-    public SimpleTokenInclude(String original) {
+    public SimpleTokenInclude(String original){
         this.original = original;
     }
 
@@ -29,4 +28,22 @@ public class SimpleTokenInclude implements SimpleToken,WordBean {
         return type;
     }
 
+    @Override
+    public void setType(int tpye) {
+        this.type = tpye;
+    }
+
+    @Override
+    public boolean isType(int type) {
+        return this.type==type;
+    }
+
+    @Override
+    public String toString() {
+        return "SimpleTokenInclude{" +
+                "original='" + original + '\'' +
+                ", type=" + type +
+                ", file='" + file + '\'' +
+                '}';
+    }
 }

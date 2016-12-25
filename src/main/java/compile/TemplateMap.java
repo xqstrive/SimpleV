@@ -1,6 +1,8 @@
-package template;
+package compile;
 
 import property.PropertyResource;
+
+import java.io.IOException;
 import java.util.Hashtable;
 import java.util.Map;
 
@@ -12,15 +14,15 @@ import java.util.Map;
 public class TemplateMap implements TemplateStream{
     private final int MAXNUM = PropertyResource.getTemplateMapMax();
     private int mapNum = 0;
-    private Map<String,TemplateByte> templateMap = new Hashtable<String, TemplateByte>();
+    private Map<String, Template> templateMap = new Hashtable<String, Template>();
 
     public TemplateMap() {}
     public void init(){};
     /*
      * This function is get template instance.if the template is not in map, new template will create.
      */
-    public TemplateByte getTemplate(String fileRelativeName){
-        TemplateByte template = templateMap.get(fileRelativeName);
+    public Template getTemplate(String fileRelativeName){
+        Template template = templateMap.get(fileRelativeName);
         return template==null?putTemplate(fileRelativeName):template;
     }
 
@@ -28,15 +30,19 @@ public class TemplateMap implements TemplateStream{
      * This function is thread safety, anytime there is a thread allowed add template instance.
      * But the performance could be bad, so you can choose if use it.
      */
-    private synchronized TemplateByte putTemplate(String fileRelativeName){
+    private synchronized Template putTemplate(String fileRelativeName){
         /* There is a check if any other thread already add the  template */
         if(templateMap.containsKey(fileRelativeName)) return templateMap.get(fileRelativeName);
         if(mapNum == MAXNUM){
             String key = getRandomTem();
             templateMap.remove(key);
         }
-        TemplateByte templatebyte = new TemplateByteMem(fileRelativeName);
-        templatebyte.init();
+        Template templatebyte = new Template(fileRelativeName);
+        try {
+            templatebyte.init();
+        } catch (IOException e){
+            PropertyResource.getLog().erro(e.getMessage());
+        }
         templateMap.put(fileRelativeName,templatebyte);
         return templatebyte;
     }
