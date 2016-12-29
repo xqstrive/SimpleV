@@ -3,11 +3,13 @@ package app;
 import context.Context;
 import context.SimpleContext;
 import org.junit.Test;
-import org.junit.Before; 
+import org.junit.Before;
 import org.junit.After;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /** 
 * SimpleVEngine Tester. 
@@ -17,7 +19,7 @@ import java.util.List;
 * @version 1.0 
 */ 
 public class SimpleVEngineTest { 
-SimpleVEngine simpleVEngine = new SimpleVEngine("test.txt");
+SimpleVEngine simpleVEngine = new SimpleVEngine("test1.html");
 @Before
 public void before() throws Exception { 
 } 
@@ -35,17 +37,18 @@ public void after() throws Exception {
 public void testRender() throws Exception {
     SimpleV.init();
     Context con = new SimpleContext();
-    con.put("x",true);
-    con.put("include",5345);
-    con.put("wang","fsdfsdf");
+    con.put("test",true);
+
+    Map<String,String> map = new HashMap<>();
+    map.put("time","May");
+    map.put("price","$9");
     List list = new ArrayList<String>();
-    list.add("for1");
+    list.add(map);
     list.add("for2");
     con.put("list",list);
+
     String html = simpleVEngine.render(con);
     System.out.println(html);
 //TODO: Test goes here... 
-} 
-
-
+}
 } 

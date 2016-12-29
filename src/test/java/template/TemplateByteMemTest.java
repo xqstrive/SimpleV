@@ -14,7 +14,7 @@ import property.PropertyResource;
 * @version 1.0 
 */ 
 public class TemplateByteMemTest {
-    TemplateByte tb = new TemplateByteMem("test.txt");
+    TemplateByte tb = new TemplateByteMem("test1.html");
 @Before
 public void before() throws Exception {
     tb.init();
@@ -43,7 +43,7 @@ public void testGetHashCode() throws Exception {
 @Test
 public void testGetTemplate() throws Exception { 
 //TODO: Test goes here...
-    String filestring = new String(tb.getTemplate(),PropertyResource.getDecoding());
+    String filestring = new String(tb.getTemplate(),PropertyResource.getEncoding());
     System.out.println(filestring);
 
 } 

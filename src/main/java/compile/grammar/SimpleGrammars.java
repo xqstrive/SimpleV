@@ -38,13 +38,16 @@ public class SimpleGrammars {
         this.template = template;
         this.con = con;
         this.start = 0;
-        this.end = template.getSimpleTokens().length;
+        this.end = template==null || template.getSimpleTokens()==null ? 0 : template.getSimpleTokens().length;
     }
 
     /*
      * 语法分析
      */
     public String render(){
+        if (template == null){
+            return "";
+        }
         if (testInclude(template.getFileName())){
             StringBuilder erro = new StringBuilder("there is a loop in");
             for (String e :listInclude)

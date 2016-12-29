@@ -1,6 +1,5 @@
 package property;
 
-import app.SimpleV;
 import log.Log;
 import compile.TemplateStream;
 
@@ -13,17 +12,58 @@ import java.io.File;
 public class PropertyInstance {
     PropertyInstance(){}
     private Log log;
-    private String encoding = "UTF-8";
-    private String decoding = "UTF-8";
-    private int templateMapMax = 50;
-    private String staticFilePath = "//src//main//resources//";
-    private boolean isTemplateMap = true;
+    private String encoding;
+    private int templateMapMax;
+    private String staticFilePath; //static file path
+    private String userDir; //user dir path
+    private boolean isTemplateMap;
     private TemplateStream templateStream;
-    private SimpleV simpleV;
+
 
     public void init(){
+        templateMapMax = 50;
         log = new log.SimpleLog();
         log.init();
+    }
+
+    public Log getLog() {
+        return log;
+    }
+
+    public String getEncoding() {
+        return encoding;
+    }
+
+    public void setEncoding(String encoding) {
+        this.encoding = encoding;
+    }
+
+    public String getStaticFilePath() {
+        return staticFilePath;
+    }
+
+    public void setStaticFilePath(String staticFilePath) {
+        this.staticFilePath = staticFilePath;
+    }
+
+    public String getUserDir() {
+        return userDir;
+    }
+
+    public void setUserDir(String userDir) {
+        this.userDir = userDir;
+    }
+
+    public int getTemplateMapMax() {
+        return templateMapMax;
+    }
+
+    public boolean getIsTemplateMap() {
+        return isTemplateMap;
+    }
+
+    public void setIsTemplateMap(boolean templateMap) {
+        isTemplateMap = templateMap;
     }
 
     public TemplateStream getTemplateStream() {
@@ -32,35 +72,5 @@ public class PropertyInstance {
 
     public void setTemplateStream(TemplateStream templateStream) {
         this.templateStream = templateStream;
-    }
-
-    public String  getStatisFilePath(){
-        return System.getProperty("user.dir")+ File.separatorChar+staticFilePath;
-    }
-
-    public Log getLog() {
-        return log;
-    }
-
-    public  String getDecoding() {
-        return decoding;
-    }
-
-    public String getEncoding() {
-        return encoding;
-    }
-
-    public int getTemplateMapMax(){return templateMapMax;}
-
-    public SimpleV getSimpleV() {
-        return simpleV;
-    }
-
-    public void setSimpleV(SimpleV simpleV) {
-        this.simpleV = simpleV;
-    }
-
-    public boolean isTemplateMap() {
-        return isTemplateMap;
     }
 }

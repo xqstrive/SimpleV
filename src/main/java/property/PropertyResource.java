@@ -1,6 +1,5 @@
 package property;
 
-import app.SimpleV;
 import log.Log;
 import compile.TemplateStream;
 
@@ -18,23 +17,27 @@ public class PropertyResource {
         pi.init();
     }
 
-    public static String getDecoding() {
-        return pi.getDecoding();
-    }
-
     public static String getEncoding() {
         return pi.getEncoding();
     }
 
+    public static void setEncoding(String encoding){pi.setEncoding(encoding);}
     public static Log getLog(){
         return pi.getLog();
     }
 
-    public static int getTemplateMapMax(){return pi.getTemplateMapMax();}
+    public static String getStaticFilePath(){return pi.getStaticFilePath();}
 
-    public static String getStaticFilePath(){return pi.getStatisFilePath();}
+    public static void setStaticFilePath(String staticFilePath){
+        pi.setStaticFilePath(staticFilePath);
+    }
 
-    public static boolean getIsTemplateMap(){return pi.isTemplateMap();}
+    public static int getTemplateMapMax(){
+        return pi.getTemplateMapMax();
+    }
+    public static boolean getIsTemplateMap(){return pi.getIsTemplateMap();}
+
+    public static void setIsTemplateMap(boolean isTemplateMap){pi.setIsTemplateMap(isTemplateMap);}
 
     public static TemplateStream getTemplateStream() {
         return pi.getTemplateStream();
@@ -44,7 +47,14 @@ public class PropertyResource {
         pi.setTemplateStream(templateStream);
     }
 
-    public static void setSimpleV(SimpleV simpleV){pi.setSimpleV(simpleV);}
+    public static String getUserDir(){
+        return pi.getUserDir();
+    }
 
-    public static SimpleV getSimpleV(){return pi.getSimpleV();}
+    public static void setUserDir(String userDir){
+        pi.setUserDir(userDir);
+    }
+
+
+
 }

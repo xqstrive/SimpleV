@@ -1,0 +1,18 @@
+<!--
+ This file is for SimpleV frame, https://github.com/xqstrive/SimpleV.
+ You can use xml configure you project, but now the property is used.
+ Author wangqi xq_strive@163.com
+ Created in 2016/12/26
+ Last modified in 2016/12/26
+-->
+
+<!ELEMENT simplev (file-dir?, encoding?, template?)>
+
+<!ELEMENT file-dir (#PCDATA)>
+
+<!ELEMENT encoding (#PCDATA)>
+
+<!ELEMENT template (template-is-map?)>
+
+<!ELEMENT template-is-map (#PCDATA)>
+

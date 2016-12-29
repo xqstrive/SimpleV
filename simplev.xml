@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE simplev SYSTEM "simplev_1_0.dtd">
+<simplev>
+    <file-dir>src\main\resources\</file-dir>
+    <encoding>UTF-8</encoding>
+    <template>
+        <template-is-map>true</template-is-map>
+    </template>
+</simplev>

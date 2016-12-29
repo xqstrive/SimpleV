@@ -1,12 +1,25 @@
-{% include test2.txt%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge"/>
+    <title>Hello, HTML5</title>
+</head>
 
-<title>
-tersdfadfsa
-<\title>
-{{include}}
-{{wang}}{{x}
+<body>
+{% include test2.html%}
+{% if test %}
+test变量为真
+{% else %}
+test变量为假
+{% endif %}
 
-{%for x in list%}
-1
-{%  endfor%}
-{%
+<table border="1">{% for x in list %}
+    <tr>
+        <td>{{x.time}}</td>
+        <td>{{x.price}}</td>
+    </tr>
+    {%endfor%}
+</table>
+<!-- 在此处编写HTML页面  -->
+</body>

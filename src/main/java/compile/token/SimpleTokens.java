@@ -200,12 +200,12 @@ public class SimpleTokens {
             /* fist charset is "a-z", "A-Z", "_". */
             String news = tokens[cur];
             char c = news.charAt(0);
-            if (c == '_' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z') {
-                 /* charset is "a-z", "A-Z", "_", "0-9". */
+            if (c == '_' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c=='.') {
+                 /* charset is "a-z", "A-Z", "_", "0-9", "\\.". */
                 int i = 1;
                 while (i < news.length()) {
                     c = news.charAt(i);
-                    if (!(c == '_' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9'))
+                    if (!(c == '_' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' && c <= '9' || c=='.'))
                         return null;
                     i++;
                 }

@@ -31,8 +31,9 @@ public class SimpleTokenIf implements SimpleToken,WordBean {
         return indexOfEndIf;
     }
 
-    public void setIndexOfEndIf(int indexOfendfor) {
-        this.indexOfEndIf = indexOfendfor;
+    public void setIndexOfEndIf(int indexOfEndIf) {
+        this.indexOfEndIf = indexOfEndIf;
+        this.indexOfElse = indexOfEndIf;
     }
 
     public String getCondiction() {

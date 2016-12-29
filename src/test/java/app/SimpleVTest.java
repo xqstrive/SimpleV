@@ -7,7 +7,9 @@ import org.junit.Before;
 import org.junit.After;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /** 
 *  Tester.
@@ -52,41 +54,14 @@ public void testRender() throws Exception {
     list.add("for1");
     list.add("for2");
     con.put("list",list);
-    SimpleV.init();
-    //System.out.print(SimpleV.render("test.txt",con));
 
-//        BufferedReader  a = new BufferedReader(new FileReader(System.getProperty("user.dir")+"\\src\\main\\resources\\test.txt"));
-//        File file = new File(System.getProperty("user.dir")+"\\src\\main\\resources\\test.txt");
-//        System.out.println("filename:"+ file.getName());
-//        System.out.println("filename:"+ file.getParent());
-//        StringBuilder sb = new StringBuilder();
-//        char[] tmp = new char[1024];
-//        int len;
-//        try {
-//            while ((len=a.read(tmp,0,1024)) !=-1){
-//                sb.append(tmp,0,len);
-//                System.out.println(len);
-//            }
-//        }catch (IOException e){
-//            System.out.println(e.getMessage());
-//        }finally {
-//            a.close();
-//        }
-//        System.out.println(sb.toString());
-//        String[] x= sb.toString().split("f");
-//        for(String s:x){
-//            System.out.println(s);
-//        }
-//        System.out.println(sb.toString().substring(0,1));
-//        String s = null;
-//        System.out.println("sdfsdfasdf".startsWith("sdf",7));
-//        int end;
-//        if ((end = 3)>0)System.out.println("end>0"+end );
-//        Map map = new HashMap();
-//        map.put("nicai",true);
-//        map.put(43,9);
-//
-//        System.out.print(map.toString());
+    SimpleV.init();
+    System.out.println(System.getProperty("user.dir"));
+    String x = "a.sdf";
+    String[] a = x.split("\\.");
+    if (a!=null){
+        System.out.print(a.length);
+    }
 } 
 
 

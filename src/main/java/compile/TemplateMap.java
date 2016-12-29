@@ -14,9 +14,11 @@ import java.util.Map;
 public class TemplateMap implements TemplateStream{
     private final int MAXNUM = PropertyResource.getTemplateMapMax();
     private int mapNum = 0;
-    private Map<String, Template> templateMap = new Hashtable<String, Template>();
+    private Map<String, Template> templateMap;
 
-    public TemplateMap() {}
+    public TemplateMap() {
+        templateMap = new Hashtable();
+    }
     public void init(){};
     /*
      * This function is get template instance.if the template is not in map, new template will create.
@@ -44,6 +46,7 @@ public class TemplateMap implements TemplateStream{
             PropertyResource.getLog().erro(e.getMessage());
         }
         templateMap.put(fileRelativeName,templatebyte);
+        ++mapNum;
         return templatebyte;
     }
 

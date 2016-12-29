@@ -31,13 +31,6 @@ public void after() throws Exception {
 @Test
 public void testGetTemplate() throws Exception { 
 //TODO: Test goes here...
-    //TemplateByte tb = tm.getTemplate("test.txt");
-//    String template = new String(tb.getTemplate(), PropertyResource.getDecoding());
-//    System.out.println(template);
-//
-//    TemplateByte tb2 = tm.getTemplate("test.txt");
-//    String template2 = new String(tb2.getTemplate(), PropertyResource.getDecoding());
-//    System.out.println(template2);
 } 
 
 
