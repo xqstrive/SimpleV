@@ -7,7 +7,7 @@
 |:------------:|:---------------:|:------------------:|
 | fileNamePath | 模板目录        | 项目地址/resources/|
 | encoding     | 编码            | UTF-8              |
-| templateMap  | 是否使用模板map | false              |
+| templateMap  | 是否使用模板map | true              |
 ###配置文件
 目前只有关于模板目录、编码和是否使用模板hash三个属性设置。
 ```xml
@@ -25,12 +25,14 @@
 首先获得模板引擎
 ```java
     import app.*;
+
     SimpleV.init();
     SimpleVEngine sve = SimpleV.engine(fileName);
 ```
 然后初始化渲染字典
 ```java
     import context.*;
+
     Context con = new SimpleContext();
     con.put("name","Eder");
 ```
