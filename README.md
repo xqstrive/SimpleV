@@ -51,7 +51,10 @@
     String html = simpleVEngine.render(con);
 ```
 ###原理介绍
+利用编译原理的知识对文本进行分词，词法分析，语法分析，和语义分析，最后渲染模板返回。
 
+
+![渲染流程](https://github.com/xqstrive/SimpleV/blob/master/static/%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B.png)
 
 ###支持语法
 语法受到Django的影响。渲染字典支持{String, list}，{String,Object}2种类型，前置用于for语法的使用，后者渲染时，实质是将String位置替换为Object.toString()；
