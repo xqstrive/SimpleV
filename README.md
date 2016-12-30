@@ -9,7 +9,7 @@
 | encoding     | 编码            | UTF-8              |
 | templateMap  | 是否使用模板map | true              |
 ###配置文件
-目前只有关于模板目录、编码和是否使用模板hash三个属性设置。
+目前只有关于模板目录、编码和是否使用模板缓存三个属性设置。
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE simplev SYSTEM "simplev_1_0.dtd">
@@ -58,7 +58,7 @@
 ![渲染流程](https://github.com/xqstrive/SimpleV/blob/master/static/%E6%B8%B2%E6%9F%93%E6%B5%81%E7%A8%8B.png)
 
 ###支持语法
-语法受到Django的影响。渲染字典支持{String, list}，{String,Object}2种类型，前置用于for语法的使用，后者渲染时，实质是将String位置替换为Object.toString()；
+语法受到Django的影响。渲染字典支持{String, list}，{String,Object}2种类型，前者用于for语法的使用，后者实质是将对应位置替换为Object.toString()；
 
 在渲染过程中凡是不符合词法的渲染变量都会按照文本输出；不符合语法部分则忽略变量标识符；各个语法可以互相嵌套和循环。
 ####1 变量
