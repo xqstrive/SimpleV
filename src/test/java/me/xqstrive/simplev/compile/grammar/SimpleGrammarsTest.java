@@ -1,10 +1,10 @@
-package compile.grammar;
+package me.xqstrive.simplev.compile.grammar;
 
-import compile.token.SimpleToken;
-import compile.token.SimpleTokens;
-import compile.token.SimpleWords;
-import context.Context;
-import context.SimpleContext;
+import me.xqstrive.simplev.compile.token.SimpleToken;
+import me.xqstrive.simplev.compile.token.SimpleTokens;
+import me.xqstrive.simplev.compile.token.SimpleWords;
+import me.xqstrive.simplev.context.Context;
+import me.xqstrive.simplev.context.SimpleContext;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;

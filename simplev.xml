@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE simplev SYSTEM "simplev_1_0.dtd">
+<!DOCTYPE simplev SYSTEM "https://github.com/xqstrive/SimpleV/blob/master/simplev_1_0.dtd">
 <simplev>
     <file-dir>src\main\resources\</file-dir>
     <encoding>UTF-8</encoding>

@@ -1,10 +1,10 @@
-package template; 
+package me.xqstrive.simplev.template;
 
 import org.junit.Test; 
 import org.junit.Before; 
 import org.junit.After;
-import property.PropertyInstance;
-import property.PropertyResource;
+import me.xqstrive.simplev.property.PropertyInstance;
+import me.xqstrive.simplev.property.PropertyResource;
 
 /** 
 * TemplateByteMem Tester. 

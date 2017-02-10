@@ -1,7 +1,7 @@
-package app;
+package me.xqstrive.simplev.app;
 
-import context.Context;
-import context.SimpleContext;
+import me.xqstrive.simplev.context.Context;
+import me.xqstrive.simplev.context.SimpleContext;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;

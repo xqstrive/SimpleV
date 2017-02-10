@@ -1,4 +1,4 @@
-package compile.token;
+package me.xqstrive.simplev.compile.token;
 
 import org.junit.Test; 
 import org.junit.Before; 

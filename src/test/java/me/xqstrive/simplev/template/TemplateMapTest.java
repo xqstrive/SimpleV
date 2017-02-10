@@ -1,10 +1,9 @@
-package template; 
+package me.xqstrive.simplev.template;
 
-import compile.TemplateMap;
+import me.xqstrive.simplev.compile.TemplateMap;
 import org.junit.Test;
 import org.junit.Before; 
 import org.junit.After;
-import property.PropertyResource;
 
 /** 
 * TemplateMap Tester. 

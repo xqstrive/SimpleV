@@ -1,4 +1,4 @@
-package log;
+package me.xqstrive.simplev.log;
 
 import org.junit.Test; 
 import org.junit.Before; 
@@ -8,7 +8,7 @@ import org.junit.After;
 * SimpleLog Tester. 
 * 
 * @author <Authors name> 
-* @since <pre>十二月 8, 2016</pre> 
+* @since <pre>十锟斤拷锟斤拷 8, 2016</pre> 
 * @version 1.0 
 */ 
 public class SimpleLogTest {
