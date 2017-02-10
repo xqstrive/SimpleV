@@ -7,6 +7,7 @@ import me.xqstrive.simplev.context.Context;
 import me.xqstrive.simplev.property.PropertyResource;
 
 /**
+ * template engine for render.
  * Created by wangqi on 2016/12/22.
  */
 public class SimpleVEngine {
@@ -16,6 +17,11 @@ public class SimpleVEngine {
         this.fileName = fileName;
     }
 
+    /**
+     * render function
+     * @param con context for the dictionary in the file.
+     * @return redered String
+     */
     public String render(Context con){
         TemplateStream templateStream = PropertyResource.getTemplateStream();
         Template template = templateStream.getTemplate(fileName);
