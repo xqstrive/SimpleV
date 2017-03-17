@@ -3,15 +3,13 @@
 准备写一个Java web框架练手，实现了一个简单的模板渲染框架，提供文件位置和渲染变量即可返回渲染的数据。还在完善中，性能不能保证，仅供学习使用。
 
 ###属性说明
+
 |property       |     implication           | default                   |
-
 |:-------------:|:-------------------------:|:-------------------------:|
-
 | fileNamePath  | path of template          | PROJECT_PATH/resources/   |
-
 | encoding      | encode and decode         | UTF-8                     |
-
 | templateMap   | use or not tempalte map   | true                      |
+
 ###配置文件
 目前只有关于模板目录、编码和是否使用模板缓存三个属性设置。
 ```xml
