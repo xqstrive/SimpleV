@@ -4,9 +4,13 @@
 
 ###属性说明
 |property       |     implication           | default                   |
+
 |:-------------:|:-------------------------:|:-------------------------:|
+
 | fileNamePath  | path of template          | PROJECT_PATH/resources/   |
+
 | encoding      | encode and decode         | UTF-8                     |
+
 | templateMap   | use or not tempalte map   | true                      |
 ###配置文件
 目前只有关于模板目录、编码和是否使用模板缓存三个属性设置。
